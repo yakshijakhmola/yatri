@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:hover {
+  cursor: pointer;
+}
+body,
+html {
+  overflow-x: hidden;
+  font-family: "PT Sans", sans-serif;
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+ul li,
+ol li {
+  list-style: none;
+}
+.section {
+  padding: 60px 20px;
+}
+.pt {
+  padding-top: 60px;
+}
+.pb {
+  padding-bottom: 60px;
+}
+.ptb {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.mtb10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mtb20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.relative {
+  position: relative;
+}
+.Darkbgbtn {
+  @apply bg-gradient-to-r from-orange-400 to-orange-600 py-2  px-4 rounded-[60px] flex items-center justify-between uppercase font-bold transition-all delay-200 ease-linear text-White;
+}
+.Darkbgbtn:hover {
+  @apply -translate-y-2 shadow-lg;
+}
+.Darkbgbtn:hover .Darkiconbtn {
+  @apply text-2xl;
+}
+.Darkiconbtn {
+  @apply w-8 h-8 bg-Lightcolor text-DarkColor flex items-center justify-center rounded-full ml-5;
+}
+.txt50 {
+  @apply text-[50px] font-bold;
+}
+.txt25 {
+  @apply text-[25px] font-bold;
+}
+.logo {
+  @apply text-[20px] text-DarkColor;
+}
+.footerpara {
+  @apply capitalize text-sm py-1 transition-all delay-300 ease-linear hover:text-DarkColor;
+}
+.footer-social {
+  @apply w-10 h-10 rounded-full bg-white border border-dotted border-DarkColor text-DarkColor flex items-center justify-center hover:bg-DarkColor hover:text-White transition-all delay-300;
+}
+footer {
+  @apply after:content-[""] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-[url('./assets/footerbg.png')] after:bg-cover after:bg-no-repeat bg-orange-50;
+}
+.gradientBg {
+  @apply bg-gradient-to-r from-orange-400 to-orange-600;
+}
+.inputdesign {
+  @apply border border-solid border-orange-600 w-full py-2 px-3 rounded-md;
+}
